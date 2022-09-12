@@ -1,0 +1,7 @@
+Django
+django-cors-headers
+mysqlclient
+cryptography
+mysql-connector-python
+djangorestframework
+requests
