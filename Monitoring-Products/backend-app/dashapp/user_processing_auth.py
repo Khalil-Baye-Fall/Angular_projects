@@ -1,3 +1,6 @@
+from django.contrib.auth.models import User
+
+
 def validate_email(email):
     account = None
     try:

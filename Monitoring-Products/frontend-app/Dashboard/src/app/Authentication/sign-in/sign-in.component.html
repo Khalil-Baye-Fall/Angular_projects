@@ -1,0 +1,23 @@
+
+<div class="container">
+    <div class="col-sm-4">
+        <div class="card signin-form" >
+            <form action="post" (ngSubmit)="user_login()">
+                <div class="card-body">
+                    <h2>Sign in</h2>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="username" [(ngModel)]="model.username">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="password" [(ngModel)]="model.password">
+                      </div>
+                      <button class="btn btn-success ">Sign in</button>
+                </div>
+            </form>
+            <span>You don't have an account yet, please <a [routerLink]="['/registration']">registration</a> </span>
+           
+          </div>
+    </div>
+</div>

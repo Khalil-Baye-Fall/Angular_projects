@@ -1,0 +1,11 @@
+---connexion
+ login: http://127.0.0.1:8000/dashapp/login/auth/token/
+ registration: http://127.0.0.1:8000/dashapp/register/
+
+
+ --products crud
+ get all products: http://127.0.0.1:8000/dashapp/products/
+ get on product by id: http://127.0.0.1:8000/dashapp/products/<str:id>/
+ create new product: http://127.0.0.1:8000/dashapp/create-product/
+ update data of product: http://127.0.0.1:8000/dashapp/update-product/<str:id>/
+ delete a product in store: http://127.0.0.1:8000/dashapp/delete-product/<str:id>/

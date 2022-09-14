@@ -1,0 +1,40 @@
+
+<div class="container">
+    <div class="col-sm-4">
+        <div class="card signin-form" >
+            <form action="post" (ngSubmit)="user_register()">
+                <div class="card-body">
+                    <h2>Sign in</h2>
+                    <!-- <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">First name</label>
+                        <input type="name" class="form-control" name="first name" placeholder="First name" [(ngModel)]="model.first_name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Last name</label>
+                        <input type="name" class="form-control" name="last name" placeholder="Last name" [(ngModel)]="model.last_name">
+                      </div> -->
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Username</label>
+                        <input type="name" class="form-control"  placeholder="Username" name="username" [(ngModel)]="model.username"> 
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control"  placeholder="name@example.com" name="email" [(ngModel)]="model.email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                        <input type="password" class="form-control"  placeholder="password" name="password" [(ngModel)]="model.password">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Confirmation Password</label>
+                        <input type="password" class="form-control"   placeholder="confirmation password" name="password2" [(ngModel)]="model.password2">
+                      </div>
+                      
+                      <button class="btn btn-success ">Registration</button>
+                </div>
+            </form>
+            <span>Do you have an account already? <a [routerLink]="['/login']">Sign in</a> </span>
+           
+          </div>
+    </div>
+</div>

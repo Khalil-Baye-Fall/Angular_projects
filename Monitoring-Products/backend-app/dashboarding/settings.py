@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
+    
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders',
+    
     
     # apps
     'dashapp.apps.DashappConfig',
@@ -57,26 +59,35 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:4200',
-    'http://localhost:4201',
-    'http://127.0.0.1:8000',
-
-)
-
 REST_FRAMEWORK = {
+    
+    
+    'DEFAULT_PERMISSION_CLASSES': (
+        # 'rest_framework.permissions.IsAuthenticated',
+    ),
+    
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ],
     
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
+    
 
 }
+
+
+
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:4200',
+    'http://127.0.0.1:4200',
+    'http://localhost:4201',
+    'http://localhost:4203',
+    'http://127.0.0.1:4203',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+)
+
 
 
 ROOT_URLCONF = 'dashboarding.urls'

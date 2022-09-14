@@ -1,0 +1,28 @@
+.container{
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PT Serif', serif;
+    padding: 10px;
+
+    h2{
+        text-align: center;
+        
+    }
+    span{
+        text-align: center;
+    }
+    
+    button{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+   
+}
+
+body{
+    background-color: #33cccc;
+    
+}
